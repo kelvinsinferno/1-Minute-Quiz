@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>JavaScript Fundamentals Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+  <body>
     <header>
-            <h2>Highscore</h2>
-            <h1>1 Minute Quiz</h1>
-            <2>Time: </2>
+      <div class= "large-font">JavaScript Fundamentals Quiz</div>
+      <button class="start-button">Begin</button>
     </header>
-    <section>
-        
-    </section>
 
+    <main>
+      <section>
+        <div class="card questions">
+           Lets play a game. Press "Begin"
+        </div>
+      </section>
+
+      <section>
+        <div class="card">
+          <div class = "timerContainer">
+            <h4>Right:<span class="right"> 0</span></h4>
+            <h4>Wrong:<span class="wrong"> 0</span></h4>
+            <h5>Your intials: <input id="initials" type="text"> <input type="button" id="save" value="save"></h5> 
+          </div>
+          <div class= "cardTimer">
+            <div class = "timer-text">
+              <div class="large-font countDownTimer">60</div>
+              <h3>seconds remaining</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="scoreboard">
+          <h1>Scoreboard</h1>
+          <ul id="scores"></ul>
+          <button class="btn" id="clear" value="reset">Clear</button>
+       </div>
+      </section>
+    </main>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
