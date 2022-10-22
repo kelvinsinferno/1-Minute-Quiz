@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 63%);
+  }
+    
+    header {
+      padding: 40px;
+      text-align: center;
+      background: #000000;
+      color: #fff;
+      border-bottom:30px #879274;
+    }
+
+      .large-font {
+          font-size: 3.5em;
+          text-align:center;
+        }
+
+      button {
+      background: radial-gradient(circle, rgb(21, 255, 0) 0%, rgba(0, 0, 0, 0.954) 100%);
+      border-radius: 8px;
+      color: #000000;
+      cursor: pointer;
+      font-size: 2em;
+      letter-spacing: 0.21px;
+      line-height: 16px;
+      max-width: 255px;
+      padding: 20px 52px;
+      text-align: center;
+      transition-duration: 0.15s;
+      transition-property: background-color;
+      transition-timing-function: linear;
+      margin-top: 0.6em;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+      section {
+        flex: flex;
+        padding: 8px;
+        margin-top: 50px;
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+      }
+      
+        .questions {
+          width: 55vw;
+          height: 400px;
+          margin-top: -25px;
+        }
+      
+        
+        .options {
+            line-height: 360px;
+          }
+            
+            .btn-group button {
+              display: flex;
+              flex-direction: column;
+              background: rgba(255, 255, 255, 0.911);
+              border-radius: 8px;
+              color: #000000;
+              cursor: pointer;
+              font-size: 2em;
+              letter-spacing: 0.21px;
+              line-height: 16px;
+              text-align: center;
+              margin-top: 10px;
+              min-width: 300pxfit;
+              max-width: fit-content;
+            }
+    .card {
+      background: radial-gradient(circle, rgb(199, 199, 199) 0%, rgba(0, 0, 0, 0.604) 100%);
+      border: 1px solid #000000;
+      border-radius: 8px;
+      margin: auto;
+      padding: 20px;
+      height: 400px;
+    }
+      .timerContainer{
+        margin-top: -25px;
+      }
+      
+      .cardTimer {
+        height: 240px;
+        padding: 10px;
+        background: #000000;
+        color: #fff;
+        text-align: center;
+      }
+      
+        .timer-text {
+          padding: 55px;
+        }
+
+        .countDownTimer{
+        }
+
+    .scoreboard {
+      flex: flex;
+      padding: 8px;
+      margin-top: 50px;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+      background: radial-gradient(circle, rgb(199, 199, 199) 0%, rgba(0, 0, 0, 0.604) 100%);
+      border: 1px solid #000000;
+      border-radius: 8px;
+      margin: auto;
+      padding: 20px;
+      height: 400px;
+    }
+  @media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: rgb(0, 0, 0);
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  
+  @media screen and (max-width: 504px) {
+    .large-font {
+      font-size: 2em;
+    }
+  
+    .reset-button {
+      font-size: 12px;
+      width: 20ox;
+      
+    }
+  
+    .timer {
+      height: 200px;
+    }
+   
+  }
